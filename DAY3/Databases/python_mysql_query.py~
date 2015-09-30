@@ -1,0 +1,30 @@
+from mysql.connector import MySQLConnection, Error
+from python_mysql_dbconfig import read_db_config
+
+def query_with_fetchone():
+	try:
+		db_config = read_db_config()
+		conn  = MySQLConnection(**db_config)
+		cursor = conn.cursor()
+		cursor.execute('select * from test')
+
+		row  = cursor.fetchone()
+		
+		while row is not None:
+			print row
+			row = cursor.fetchone()
+	except Error as e:
+		print "[SOMETHING BAD HAPPEND ]", e
+	finally:
+		conn.close()
+		cursor.close()
+
+def query_with_fetchall():
+	pass
+
+def query_with_fetchmany():
+	pass
+
+
+if __name__ == '__main__':
+	query_with_fetchone()
