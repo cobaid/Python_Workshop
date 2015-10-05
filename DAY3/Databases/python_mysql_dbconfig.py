@@ -13,7 +13,9 @@ def read_db_config(filename = "config.ini", section = 'mysql'):
 
     db = {}
     if parser.has_section(section):
+	
         items = parser.items(section)  #retuen list of tuples
+	print items
         for item in items:
             db[item[0]] = item[1]        #converting them to dictionary
     else:

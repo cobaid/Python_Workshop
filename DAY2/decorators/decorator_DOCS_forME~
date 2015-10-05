@@ -1,0 +1,14 @@
+python support function closure property which means: that inner function defined  in a non-global scope remember what their enclosing namespace was looked  like at defination time.
+EXAMPLE:
+def outer(x):
+    print "inside outer", x
+    def inner():
+    	print "inside inner", x
+    return inner
+
+foo= outer('z') 
+foo()
+outer(1)
+foo()
+foo.func_closure 
+

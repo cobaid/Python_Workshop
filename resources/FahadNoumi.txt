@@ -1,0 +1,234 @@
+print ("any string")			//to print on VDU
+print "any string"			//not supported in python 3.3
+var1, var2, var3=100, 65.82, "string"	//to initialize multiple var
+del <var_name>				//deletes the var similar to free() function in c
+
+str[0]					//prints the char at index 0
+str[1:5]				//print char from index 1 to index 5
+str[3:]					//start printing char from index 3 to end of string
+
+-------------------------- LIST -----------------------------
+mylist=['one',2,'three']		//list is like array in c but can contain any type of data
+len(mylist)				//returns the length of list
+max(mylist)				//returns max element of list
+min(mylist)				//returns min element of list
+mylist.count(element)			//returns no of times passed element coming 
+mylist.append(elment)			//it appends element to the list
+mylist.insert(at_index,element)		//inserts element at given index no 
+mylist.remove(element)			//removes the first occurence of element
+mylist.reverse()			//reverse the order of list
+mylist.sort()				//sorts the list in accending order
+-------------------------- TUPLES -----------------------------
+mytuple=('one',2,'three')		//tuples are also list with difference that it cannot be updated
+					//tuples supports function such as max() min() len()
+
+-------------------------- DICTIONARY -----------------------------
+--MEHOD 1 :
+address={}
+address["key1"]=value1			//key can be string or number
+address["key2"]=value2			//key can be string or number
+
+--MEHOD 2 :
+address={'key1':'value1','key2':value2,key3:value3}
+
+-- function --
+address.keys()				//prints all keys of dictionary
+address.values()			//prints all values
+address.update(another_dictionary)	//to add two dictionaries
+address.clear()				//deletes all the elements of dictionary
+
+--------------------------- TYPE CONVERSION -----------------------------
+int(value)				//ruturns float value to int value
+float(value)				//ruturns int or string to float
+str(value)				//ruturns int or float value to string value
+tuple("this is string")			//ruturns string to tuple
+list("this is string")			//ruturns string to list
+chr(ascii_number)			//returns char of given ascii
+ord('ascii_char')			//returns ascii value of char
+hex(number)				//returns hex code of number
+oct(number)				//returns oct code of number
+bin(number)				//returns binary number
+
+--------------------------- OPERATORS -----------------------------
+--arithematic
+	+, -, *, /, %			//arithematic op
+	**				//to find power of any no for eg sq of 3- 3**2
+--comparision
+	==, !=, >, <, >=, <=		//returns TRUE or FALSE
+--bitwise
+	 &, |, ^			//'and', 'or', 'ex-or'  
+--logical
+	and, or, not			//check on True or False values
+--membership
+	"dog" in "i have dog"		//returns True or False by checking given data present in set
+--identity
+	a is b				//return true if value and datatype of both var are same
+	a is not b			//complimnet of 'is' operator
+--asssignmnet
+	=				//use to assign values
+--------------------------- IF - BLOCK ---------------------------------
+syntax of if : 
+
+if condition :
+	statment inside if block
+	another statment inside if block
+statment outside if block
+
+--------------------------- IF - ELSE BLOCK -----------------------------
+
+if condition :
+	statment inside if block
+	another statment inside if block
+else:
+	inside else block
+statment outside if-else block
+
+--------------------------- IF - ELIF - ELSE BLOCK -----------------------
+if (condition) :
+	statment inside if block
+	another statment inside if block
+elif(condition):
+	inside elif block
+else:
+	inside else block
+statment outside if-else block
+
+--------------------------- WHILE LOOP -----------------------------------
+while(counter_condition):
+	statments
+	inc/dec counter
+
+--------------------------- BREAK / CONTINUE STATMENT -----------------------------------
+while(counter_condition):
+	if(condition):
+		break			// OR continue
+	statments
+	inc/dec counter
+--------------------------- FOR LOOP -----------------------------------
+for in range/list/tuple:
+	block of for
+
+-------------------------- NUMERIC FUNCTION -----------------------------------
+abs(number)				//returns absolute value
+math.ceil(number)
+math.floor(number)		
+math.sqrt(number)			//return square root
+math.log(number)			//returns natural log of number
+math.log10(number)			//returns log to the base 10
+max(list_of_args or list or tuple)	//return max element
+min(list_of_args or list or tuple)	//return min element
+round(float_number, decimal_place)	//round of float number til decimal_places
+math.modf(float_numer)			//returns a tuple of seprated int and decimal part
+math.pow(nume,power)			//returns number raised to power
+math.hypot(a,b)				//returns hypo taking a and b sides of right angle tri
+math.degrees(radian_angle)		//returns equivalant degree angle of given rad angle
+math.radians(degree_angle)		//returns radian angle
+
+-------------------------- STRING FUNCTION -----------------------------------
+suppose str="ANY string"
+str.capitalize()			//returns string with capitalized first letter of string
+str.count('key')			//counts the number of time occurence of key
+str.endswith('string')			//returns true if string ends with given string
+str.find('any')				//searchs for passed arg if found returns indexNo else -1
+str.islower()				//returns true if all char in string are lowercase
+str.isupper()				//returns true if all char in string are uppercase
+len(str)				//returns the length of passed string
+str.lower()				//returns string with lowercase
+str.upper()				//returns string with uppercase
+str.lstrip('!')				//returns string with removed '!' symbol from left side only
+str.rstrip('!')				//returns string with removed '!' symbol from right side only
+str.strip('!')				//returns string with removed '!' symbol from both side 
+str.replace('from','to')		//returns strign with replace string first arg with 2nd args
+str.split('delimiter')			//returns a list of words splited at each occurence of delimiter
+str.swapcase()				//returns string with opposite case for this eg: "any STRING"
+str.title()				//returns string with first letter of each word uppercase and all other lowercase
+--------------------------- OTHER ---------------------------------
+input()					//to take input from user
+range(a,b)				//it returns a list of numbers from a to b
+import module_name			//imports module
+global var_name				//define it inside function to update global variables
+-------------------------- TIME MODULE ----------------------------
+time.time()				//returns current time stamp
+time.localtime(time.time())		//tm_year=2015,tm_mon=3,tm_mday=14,tm_hour=23,tm_min=32,tm_sec=26,tm_wday=5,tm_yday=73,tm_isdst=0
+time.asctime()				//returns 'Sat Mar 14 23:33:24 2015'
+time.mktime(tuple(year,month,day,hr,min,sec,wk_day,yr_day,isd))	//returns time stamp for provided info
+					//put zero for unknwn fields in tuple for mktime
+time.sleep(time_in_sec)			//delays next command by specified secounds
+-------------------------- CALENDAR MODULE ----------------------------
+calendar.month(1965,3)			//returns the calendar of month
+calendar.calendar(year,NoBitDateOccupy,noLineWeekToTake,charOfSpaceBetwnColumn))//returns calendar of year
+calendar.isleap(year)			//returns True if its leap year
+
+-------------------------- SYS MODULE ----------------------------
+sys.path				//prints the path where python searches for module when called with import statment
+-------------------------- USER - DEFINED FUNCTION ----------------------------
+def funct_name():
+	block of code
+	return
+
+------------- USER - DEFINED FUNCTION FOR VARIABLE ARGUMNETS----------------------------
+def function(*mytuple):			//here * is used for variable agumnet
+	block of code			//values passed to function are stored in tuple 
+	return				//from tuple we can get all the values
+------------------------------- ANONYMUS FUNCTIONS ------------------------------------------------
+fuctn_name=lambda var1,var2: block of code	//here lambda shows that its anonymous function
+fuctn_name(value1,value2)			//calling anonymous function
+
+-------------------------------- FILE I/O ----------------------------------------------
+myObj=open("filename.extension","mode")		//mode may be "r" "w" or "a"
+myObj.write("string")				//to write to file
+text=myObj.read()				//stores string in text variable
+myObje.close()					//it closes the file without which no changes will be made to file
+import os					//to import os module
+os.rename(path\file.ext,path\newname.ext)	//in path replace all '/' with '//'. the default path in python is python33 folder 
+os.remove("path\file.ext")			//replace all '/' with '//' in path.
+os.mkdir("path\foldername")			//replace all '/' with '//' in path
+os.chdir("path")				//to change directory
+os.rmdir("folder")				//to delete folder
+os.getcwd()					//prints the current working directory
+
+-------------------------------- TRY EXCEPT - BLOCK ----------------------------------------------
+try:
+	try-block
+	put stament thay may throw exception or error
+except:
+	except block
+	if error is encounered then this block is executed
+else:S
+	else-block
+	if error is not encountered then this block is executed
+
+-------------------------------- OOPS ----------------------------------------------
+class classname:
+	def __init__(self,paramaeter....):
+		its like constructor in java which is called automatically when obj is created
+	def funct(self,para):
+		any function block
+		return
+
+
+
+--------------------------------MYSQL CONNECTOR ------------------------------------
+--How to install :
+	apt-get install python-pip
+	pip install -U pip
+
+	apt-get install python-dev libmysqlclient-dev
+	pip install MySQL-python 
+
+----------------------------------
+import mysql.connector				//to import mysql module
+
+conn1=mysql.connector.connect(user='root',password='root',host='localhost',database='any')
+						//to connect to database with given info
+mycursor=conn.cursor()				//creates cursor for databse
+mycursor.execute("MySQL query")			//executes mysql query
+mycursor.fetchall()				//returns the result of execute() method
+conn.commit()					//reflects the result to MySQL database
+
+--------------------------------  EMAIL  ------------------------------------
+import smtplib					//imports library for email
+server=smtplib.SMTP(servername,port)		//eg server=smtplib.SMTP('smtp.gmail.com',587)
+server.starttls()				//it starts server
+server.sendmail('from','to','msg')		//to send emails
+

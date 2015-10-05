@@ -57,7 +57,7 @@ def query_with_fetchmany():
 
 def iter_rows(cursor, size=10):
 	while  True:
-		rows = cursor.fetchmany(1)
+		rows = cursor.fetchmany(10)
 		if not rows:
 			break
 		for row in rows:

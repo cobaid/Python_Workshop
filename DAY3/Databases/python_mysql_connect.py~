@@ -15,6 +15,9 @@ def connect():
 	except Error as e:
 		print "[SOMETHING BAD  HAPPEND...]",e
 	
-	
+	finally:
+		conn.close()
+		print 'Connection Closed'
+
 if __name__ == '__main__':
 	connect()

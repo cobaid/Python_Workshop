@@ -1,0 +1,5 @@
+create database tmp;
+use tmp;
+create table abc(uid int primary key auto_increment,name varchar(100));
+
+	
