@@ -42,11 +42,11 @@
 
 ### [Sadik Khadeer Shaikh](https://github.com/sadikkhadeer)
 
-### [Rakesh Gundukka](https://github.com/rakeshgunduka)
-
 ### [Shaikh Fahad](https://github.com/fahadshaikh09)
 
 ### [Nouman Ansari](#)
+
+### [Rakesh Gundukka](https://github.com/rakeshgunduka)
 
 ### [Sayma Siddiqui](#)
 
