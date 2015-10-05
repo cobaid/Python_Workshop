@@ -1,6 +1,6 @@
 # [ProgrammersClub [AIKTC]](https://www.facebook.com/aiktcprogrammersclub)
 
-### This is source code and content repository of python workshop conducted by AIKTC ProgrammersClub below is an index kind of a thing to easy the process of searching content.
+### This is a source code and content repository of python workshop conducted by AIKTC ProgrammersClub below is an index kind of a thing to easy the process of content searching.
 
 #Python  Tutorial for beginners
 
@@ -38,30 +38,31 @@
 
 
 ##Speakers and Content Writers:
-[Sayed Zainul Abideen](https://github.com/zain101/)
+### [Sayed Zainul Abideen](https://github.com/zain101/)
 
-[Sadik Khadeer Shaikh](https://github.com/sadikkhadeer)
+### [Sadik Khadeer Shaikh](https://github.com/sadikkhadeer)
 
-[Rakesh Gundukka](https://github.com/rakeshgunduka)
+### [Rakesh Gundukka](https://github.com/rakeshgunduka)
 
-[Shaikh Fahad](https://github.com/fahadshaikh09)
+### [Shaikh Fahad](https://github.com/fahadshaikh09)
 
-[Nouman Ansari](#)
+### [Nouman Ansari](#)
 
-[Sayma Siddiqui](#)
+### [Sayma Siddiqui](#)
 
-####References:
 
-[J.R. Johansson (jrjohansson at gmail.com)](http://github.com/jrjohansson/scientific-python-lectures)
+#####References:
 
-[Sebastian Raschka](http://sebastianraschka.com)
+###### [J.R. Johansson (jrjohansson at gmail.com)](http://github.com/jrjohansson/scientific-python-lectures)
 
-[Chris Beaumont](http://chrisbeaumont.org/)
+###### [Sebastian Raschka](http://sebastianraschka.com)
 
-[Matplolib](http://matplotlib.org/)
+###### [Chris Beaumont](http://chrisbeaumont.org/)
 
-[Ipython](ipython.org)
+###### [Matplolib](http://matplotlib.org/)
 
-[Core Python 2](corepython.com/)
+###### [Ipython](ipython.org)
 
-[Learn Python the hardway](learnpythonthehardway.org)
+###### [Core Python 2](corepython.com/)
+
+###### [Learn Python the hardway](learnpythonthehardway.org)
