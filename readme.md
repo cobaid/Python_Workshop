@@ -46,7 +46,7 @@
 
 ### [Nouman Ansari](#)
 
-### [Rakesh Gundukka](https://github.com/rakeshgunduka)
+### [Rakesh Gunduka](https://github.com/rakeshgunduka)
 
 ### [Sayma Siddiqui](#)
 
